@@ -9,42 +9,42 @@ package Dto;
  *
  * @author Kaine
  */
-public class FPTUniversity extends Colony implements Role {
+public class FPTUniversity extends University implements Role {
 
-	private String type;
+	private String place ;
 
 	//Constructor
 	
 	public FPTUniversity() {
 		super();
-		this.type = "";
+		this.place = "";
 	}
 
-	public FPTUniversity(int size, String type, String place) {
-		super(size, place);
-		this.type = type;
+	public FPTUniversity(int size, String name, String place) {
+		super(size, name);
+		this.place = place;
 	}
 
 	
 	//Getter & setter
 
-	public String getType() {
-		return this.type;
+	public String getPlace() {
+		return this.place;
 	}
 
-	public void setType(String type) {
-		this.type = type;
+	public void setPlace(String place) {
+		this.place = place;
 	}
 	
 	//Method
 	
 	@Override
 	public void createWorker() {
-		System.out.println("Worker bees perform all the work of the bees");
+		System.out.println("Providing human resources");
 	}
 
 	public String toString() {
-		return ("The colony's type is " + this.type + ", size about " + this.getSize() + ", and the place is " + this.getPlace()); 
+		return ("FPTU has four campuses Hanoi, HCM, DaNang, CanTho, QuyNhon"); 
 	}
 		
 }

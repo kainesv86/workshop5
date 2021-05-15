@@ -21,6 +21,12 @@ public class Tester {
 		System.out.println(obj1);
 		obj1.grow();
 		obj1.reproduce();
+
+		University obj2 = new FPTUniversity(100000,"FPT", "Cantho");
+		System.out.println(obj2);
+		obj2.enroll();
+		obj2.educate();
+		
 	}
 	
 }
