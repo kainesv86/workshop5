@@ -9,6 +9,36 @@ package Dto;
  *
  * @author Kaine
  */
-public class Organization {
+public abstract class Organization {
+	private int size;
+
+	public Organization() {
+		this.size = 0;
+	}
+
+	public Organization(int size) {
+		this.size = size;
+	}
+
+	// Getter & Setter
+
+	public int getSize() {
+		return this.size;
+	}
+	
+	public void setSize(int size) {
+		this.size = size;
+	}
+
+	//Method
+
+	public abstract void communicateByTool(); 
+
+	public String toString() {
+		return ("The organization's size is" + size);
+	}
+	
+	
+
 	
 }

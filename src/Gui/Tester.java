@@ -5,6 +5,8 @@
  */
 package Gui;
 
+import Dto.*;
+
 /**
  *
  * @author Kaine
@@ -15,7 +17,10 @@ public class Tester {
 	 * @param args the command line arguments
 	 */
 	public static void main(String[] args) {
-		// TODO code application logic here
+		Colony obj1 = new BeeColony(2000, "honey", "land");
+		System.out.println(obj1);
+		obj1.grow();
+		obj1.reproduce();
 	}
 	
 }
